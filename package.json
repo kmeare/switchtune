@@ -1,0 +1,33 @@
+{
+  "name": "witchbladetune",
+  "version": "1.0.0",
+  "description": "training your ear of shit",
+  "main": "index.js",
+  "author": "kmexnx",
+  "license": "MIT",
+  "engines": {
+    "node": ">=10.4.1"
+  },
+  "scripts": {
+    "start": "npm run clear && parcel index.html -p 4000 --hmr-port 4012",
+    "build": "npm run clear && npx parcel build",
+    "clear": "rimraf ./dist"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2",
+    "scribbletune": "^1.0.0-alpha.6",
+    "tonal": "^1.1.3",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.0.1",
+    "eslint-plugin-vue": "^4.5.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.9.4",
+    "parcel-plugin-eslint": "^1.0.4",
+    "parcel-plugin-vue": "^1.5.0"
+  }
+}
